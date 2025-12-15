@@ -1,0 +1,29 @@
+# include <bits/stdc++.h>
+using namespace std ;
+
+bool Sapxep (int a , int b){
+   return a < b ;
+}
+int main (){
+   int m ,c;
+   cout << "nhap so trong mang";
+   cin >> m ; 
+   vector <int> v ;
+   for (int i = 0 ;i < m;i++){
+      int n ;
+      cin >> n ;
+      v.push_back(n);
+   }
+   sort (v.begin(),v.end(),Sapxep);
+   cout << "nhap so can tim";
+   cin >> c ;
+   auto it = lower_bound(v.begin(),v.end(),c);
+   it--;
+   if (it!=v.end()&& it!=v.begin()){
+      cout << *it << endl ;
+   }else {
+      cout << "khong tim thay";
+   }
+    system("pause");
+    return 0 ;
+} 
