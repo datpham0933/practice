@@ -1,0 +1,25 @@
+# include <bits/stdc++.h>
+using namespace std ;
+
+
+int main (){
+   int n ;
+   cin >> n;
+   int a[n];
+   // tạo mảng array để dễ dàng hơn
+   for (int i =0;i<n;i++){
+      cin >> a[i];
+      // nhập số vào array
+   }
+   map <int,int> mp ;
+   // tạo map để đếm tần suất các số ở mảng array
+   for (auto x : a){
+      // duyệt tất cả các số của array
+      mp[x]++;
+      // tăng một đơn vị số xuất hiện trong mảng array
+      cout << mp[x] << endl ;
+      // in ra số lần suất hiện
+   }
+    system("pause");
+    return 0 ;
+} 
