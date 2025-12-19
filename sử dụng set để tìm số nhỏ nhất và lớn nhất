@@ -1,0 +1,20 @@
+# include <bits/stdc++.h>
+using namespace std ;
+
+int main (){
+   int n ;
+   cin >> n ;
+   int a[n] ;
+   set<int>s ;
+   for (int i=0;i<n;i++){
+      cin >> a[i];
+      s.insert(a[i]);
+   }
+   if (s.size()>=2){
+   cout << "so luong trong mang" << s.size() << endl ;
+   cout << "so nho nhat" << *s.begin() << endl ;
+   cout << "so lon nhat " << *s.rbegin() << endl ;
+}
+    system("pause");
+    return 0 ;
+} 
